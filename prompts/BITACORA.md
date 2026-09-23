@@ -31,13 +31,52 @@ Laboratorio 06: Fundamentos de Ingenieria de Prompts. Herramienta de IA usada: C
 
 ## Ejercicio 5: Anatomia de un prompt
 
-| Componente  | Texto de mi prompt                                                                                                                                                                                                                                      |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Rol         | Actua como desarrollador Java.                                                                                                                                                                                                                          |
-| Instruccion | Crea un programa en Java... usando una clase Producto con los atributos codigo, nombre, precio y stock.                                                                                                                                                 |
-| Contexto    | Actua como desarrollador Java. Crea un programa en Java para gestionar los productos de una tienda. Explica primero la estructura de la clase y luego presenta el codigo Java. Usa este estilo para los metodos: getPrecio(), setPrecio(double precio). |
-| Ejemplo     | Usa este estilo para los metodos: getPrecio(), setPrecio(double precio).                                                                                                                                                                                |
-| Formato     | Explica primero la estructura de la clase y luego presenta el codigo Java.                                                                                                                                                                              |
+## Ejercicio 5: Anatomia de un prompt, paso a paso
+
+| Componente  | Texto de mi prompt                                                                                                                              |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rol         | Actua como desarrollador Java.                                                                                                                  |
+| Instruccion | Crea un programa en Java para gestionar los productos de una tienda usando una clase Producto con los atributos codigo, nombre, precio y stock. |
+| Contexto    | El sistema servirá para una tienda local que necesita controlar su inventario de manera sencilla.                                               |
+| Ejemplo     | Usa este estilo para los metodos: getPrecio(), setPrecio(double precio).                                                                        |
+| Formato     | Explica primero la estructura de la clase y luego presenta el codigo Java.                                                                      |
+
+- **Nivel 1:** Generó una estructura genérica aleatoria.
+- **Nivel 2:** Enfocó la respuesta al estándar técnico de desarrollo.
+- **Nivel 3:** Centró el código en la gestión del negocio solicitado.
+- **Nivel 4:** Creó la clase con los atributos específicos solicitados de forma estricta.
+- **Nivel 5:** Estructuró la salida separando la explicación conceptual del bloque de código.
+
+## Ejercicio 6: Del prompt básico al profesional (e iterar)
+
+### Prompt v1 (Básico)
+
+```text
+Hazme codigo para un login.
+```
+
+### Prompt v2 (Profesional)
+
+```text
+Actua como desarrollador Java. Crea un ejemplo de login para una aplicacion de escritorio utilizando Swing. El usuario debe ingresar correo y contrasena. Explica brevemente el funcionamiento y presenta el codigo organizado por clases.
+```
+
+### Prompt v3 (Mejorado / Iterado)
+
+```text
+Mejora el codigo anterior con estas restricciones: no uses librerias externas, valida que el correo contenga @ y que la contrasena tenga al menos 8 caracteres, y muestra los mensajes con JOptionPane.
+```
+
+### Evaluación del código profesional iterado
+
+| Qué revisar                                            | Cumple (Sí / No) |
+| ------------------------------------------------------ | ---------------- |
+| ¿Está escrito en Java y usa Swing?                     | Sí               |
+| ¿Pide correo y contraseña?                             | Sí               |
+| ¿Explica el funcionamiento antes o después del código? | Sí               |
+| ¿El código está organizado en clases?                  | Sí               |
+| ¿Valida los datos que ingresa el usuario?              | Sí               |
+|  |
 
 ## Ejercicio 6: Del prompt basico al profesional
 
