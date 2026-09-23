@@ -41,8 +41,9 @@ Estamos construyendo el módulo de autenticación para una API RESTful en Node.j
 
 Escribe el código completo para la ruta POST /api/register. La función debe validar que el email tenga un formato válido, cifrar la contraseña con bcrypt, generar un JWT y manejar los errores. No uses librerías externas de validación ni ORMs.
 
-Usa este estilo para los metodos: getPrecio(), setPrecio(double precio).
-Explica primero la estructura de la clase y luego presenta el codigo Java.
+Usa funciones asíncronas (async/await) para el manejo de los datos.
+Explica primero el flujo de las rutas y luego presenta el código JavaScript limpio.
+
 ```
 
 - **Qué cambié:** Se integraron los 5 componentes estructurados dentro del prompt final (Rol, Instrucción, Contexto, Ejemplo y Formato) agregando restricciones explícitas.
